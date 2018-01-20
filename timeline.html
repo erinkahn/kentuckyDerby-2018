@@ -1,212 +1,163 @@
 <!doctype html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Kentucky Derby: Timeline</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kentucky Derby: Timeline</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- NOOBS: if you're working in plain old CSS, do so in dist/css and use these style tags -->
-	<!-- <link rel="stylesheet" href="dist/css/reset.css">
-	<link rel="stylesheet" href="dist/css/main.css"> -->
+    <!-- NOOBS: if you're working in plain old CSS, do so in dist/css and use these style tags -->
+    <!-- <link rel="stylesheet" href="dist/css/reset.css">
+    <link rel="stylesheet" href="dist/css/main.css"> -->
 
-	<!-- LEETS: if you want to use transpiled SASS files, do so in src/scss, and use this style tag -->
-	<link rel="stylesheet" href="dist/css/app.css">
+    <!-- LEETS: if you want to use transpiled SASS files, do so in src/scss, and use this style tag -->
+    <link rel="stylesheet" href="dist/css/app.css">
 
-	<!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
-	
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
 
-	<link rel="stylesheet" href="horizontal-timeline/css/reset.css"> <!-- CSS reset -->
+  </head>
+  <body>
 
-	<link rel="stylesheet" href="horizontal-timeline/css/style.css"> <!-- Resource style -->
+    <div class="fashion-heading">
+      <h1>Timeline</h1>
+    </div>
+    
 
-	<script src="horizontal-timeline/js/modernizr.js"></script> <!-- Modernizr -->
-  	
-</head>
-	<body>
+<!-- hat carousel -->
+  
+    <div id="timeline">
+      <ul id="dates">
+        <li><a href="#1900">1900</a></li>
+        <li><a href="#1930">1930</a></li>
+        <li><a href="#1944">1944</a></li>
+        <li><a href="#1950">1950</a></li>
+        <li><a href="#1971">1971</a></li>
+        <li><a href="#1977">1977</a></li>
+        <li><a href="#1989">1989</a></li>
+        <li><a href="#1999">1999</a></li>
+        <li><a href="#2001">2001</a></li>
+        <li><a href="#2011">2011</a></li>
+      </ul>
 
-		<section class="cd-horizontal-timeline">
-			<div class="timeline">
-				<div class="events-wrapper">
-					<div class="events">
-						<ol>
-							<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-							<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
-							<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
-							<li><a href="#0" data-date="20/05/2014">20 May</a></li>
-							<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
-							<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
-							<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
-							<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
-							<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
-							<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
-							<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
-							
-						</ol>
-
-						<span class="filling-line" aria-hidden="true"></span>
-					</div> <!-- .events -->
-				</div> <!-- .events-wrapper -->
-					
-				<ul class="cd-timeline-navigation">
-					<li><a href="#0" class="prev inactive">Prev</a></li>
-					<li><a href="#0" class="next">Next</a></li>
-				</ul> <!-- .cd-timeline-navigation -->
-			</div> <!-- .timeline -->
-
-			<div class="events-content">
-				<ol>
-					<li class="selected" data-date="16/01/2014">
-						<h2>Horizontal Timeline</h2>
-						<em>January 16th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="28/02/2014">
-						<h2>Event title here</h2>
-						<em>February 28th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="20/04/2014">
-						<h2>Event title here</h2>
-						<em>March 20th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="20/05/2014">
-						<h2>Event title here</h2>
-						<em>May 20th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="09/07/2014">
-						<h2>Event title here</h2>
-						<em>July 9th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="30/08/2014">
-						<h2>Event title here</h2>
-						<em>August 30th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="15/09/2014">
-						<h2>Event title here</h2>
-						<em>September 15th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="01/11/2014">
-						<h2>Event title here</h2>
-						<em>November 1st, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="10/12/2014">
-						<h2>Event title here</h2>
-						<em>December 10th, 2014</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="19/01/2015">
-						<h2>Event title here</h2>
-						<em>January 19th, 2015</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-
-					<li data-date="03/03/2015">
-						<h2>Event title here</h2>
-						<em>March 3rd, 2015</em>
-						<p>	
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-						</p>
-					</li>
-				</ol>
-			</div> <!-- .events-content -->
-		</section>
-
+      <ul id="issues">
+        <li id="1900">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1900</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1930">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1930</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1944">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1944</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1950">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1950</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1971">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1971</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1977">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1977</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1989">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1989</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="1999">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>1999</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="2001">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>2001</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+        <li id="2011">
+          <img src="src/img/placeholder5.png" width="256" height="256" />
+          <h1>2011</h1>
+          <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+        </li>
+      </ul> 
+    </div>
+    <a href="#" id="next">+</a>
+    <a href="#" id="prev">-</a>
 
 
 <!-- bottom navigation icons -->
 
-		<nav>
-			<ul>
+    <nav>
+      <ul>
 
-				<li class="horses">
-					<a href="horses.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Horses
-					</a>
-				</li>
+        <li class="horses">
+          <a href="horses.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Horses
+          </a>
+        </li>
 
-				<li class="timeline">
-					<a href="timeline.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Timeline
-					</a>
-				</li>
+        <li class="timeline">
+          <a href="timeline.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Timeline
+          </a>
+        </li>
 
-				<li class="facts">
-					<a href="facts.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Facts
-					</a>
-				</li>
+        <li class="facts">
+          <a href="facts.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Facts
+          </a>
+        </li>
 
-				<li class="fashion">
-					<a href="fashion.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Fashion
-					</a>
-				</li>
+        <li class="fashion">
+          <a href="fashion.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Fashion
+          </a>
+        </li>
 
-				<li class="rose">
-					<a href="rose.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Rose Garland
-					</a>
-				</li>
+        <li class="rose">
+          <a href="rose.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Rose Garland
+          </a>
+        </li>
 
-				<li class="mint">
-					<a href="mint.html">
-						<figure><img src="src/img/placeholder.png"></figure>
-						Mint Julep
-					</a>
-				</li>
-			</ul>
-		</nav>
-
-<!--these are all in the horizontal timeline folder-->
-		<script src="horizontal-timeline/js/jquery-2.1.4.js"></script>
-
-		<script src="horizontal-timeline/js/jquery.mobile.custom.min.js"></script>
-
-		<script src="horizontal-timeline/js/main.js"></script> <!-- Resource jQuery -->
+        <li class="mint">
+          <a href="mint.html">
+            <figure><img src="src/img/placeholder.png"></figure>
+            Mint Julep
+          </a>
+        </li>
+      </ul>
+    </nav>
 
 
-	</body>
+    <!-- NOOBS: if you're working in plain old ES5 JS, do so in dist/js and use this script tag -->
+    <!-- <script src="dist/js/main.js"></script> -->
+    
+    <!-- LEETS: if you want to use transpiled ES6 JS files, do so in the src/js folder, and use this script tag --> 
+    <script src="src/js/app.js"></script>
+
+    <!-- to learn more about src vs dist, go here https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders -->
+
+  </body>
 </html>
+
+
+
+				
