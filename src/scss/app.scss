@@ -98,11 +98,12 @@ nav{
 }
 
 
-//h1 current horses carousel----------------------------------
+//h1 headings----------------------------------
 
 .horses-heading,
 .timeline-heading,
-.fashion-heading{
+.fashion-heading,
+.facts-heading{
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -346,76 +347,92 @@ section.dates.slider.slick-initialized.slick-slider{
 
 // }
 
-		
-
-		
-// #next,
-// #prev {
-// 	position: absolute;
-// 	top: 540px;
-// 	width: 100%;
-// 	height: 100%;
-// 	background-position: 0 0;
-// 	background-repeat: no-repeat;
-// 	text-indent: -9999px;
-// 	overflow: hidden;
-// }
-
-// #next {
-// 	right: -1990px;
-// }
-
-// #prev {
-// 	left: 300px;
-// }
-
-// #next.disabled,
-// #prev.disabled {
-// 	opacity: 0.2;
-// }
 
 
+// slick plugin facts carousel-------------------------------
 
 
+section.fact.slider.slick-initialized.slick-slider{
+	width: 95%;
+	margin: 80px auto;
+	display: flex;
+
+	div{
+		justify-content: center;
+
+		img{
+			margin: 80px 210px;
+		}
+	}
+
+	//next button
+	button.slick-next.slick-arrow{
+		right: 90px;
+		top: 240px;
+		z-index: 2;
+
+		&::before{
+			font-size: 50px;
+			color: gray;
+		}
+	}
+
+	//previous button
+	button.slick-prev.slick-arrow{
+		left: 50px;
+		top: 240px;
+		z-index: 2;
+
+		&::before{
+			font-size: 50px;
+			color: gray;
+		}
+	}
+}
 
 
 // slick plugin fashion carousel-------------------------------
 
 section.hat.slider.slick-initialized.slick-slider{
-	width: 2500px;
+	width: 92%;
+	margin: 80px auto;
+	display: flex;
+	justify-content: center;
 
 	div{
-		margin-top: 90px;
-		padding: 0 10px 80px 10px;
-	}
-
-	button.slick-next.slick-arrow,
-	button.slick-prev.slick-arrow{
-		top: 520px;
-	}
-}
-
-
-// slick plugin facts carousel-------------------------------
-
-section.fact.slider.slick-initialized.slick-slider{
-	width: 2500px;
-
-	button.slick-next.slick-arrow,
-	button.slick-prev.slick-arrow{
-		top: 710px;
-	}
-
-	div{
-		margin-top: 90px;
-		padding: 0 0 0 365px;
+		width: 88%;
+		justify-content: center;
 
 		img{
-			width: 1400px;
-			padding: 0 30px;
+			margin: 95px auto;
+			padding: 0 10px;
 		}
+	}
 
-		
-	}	
+	//next button
+	button.slick-next.slick-arrow{
+		right: 25px;
+		top: 240px;
+		z-index: 2;
 
+		&::before{
+			font-size: 50px;
+			color: gray;
+		}
+	}
+
+	//previous button
+	button.slick-prev.slick-arrow{
+		left: 0px;
+		top: 240px;
+		z-index: 2;
+
+		&::before{
+			font-size: 50px;
+			color: gray;
+		}
+	}
 }
+
+
+

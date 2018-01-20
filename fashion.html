@@ -140,10 +140,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
     <script type="text/javascript">
-        $('.hat').slick({
-          centerMode: true,
-          centerPadding: '0',
-          slidesToShow: 2.9
+        $(document).on('ready', function() {
+          $(".hat").slick({
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          });
         });
     </script>
 
