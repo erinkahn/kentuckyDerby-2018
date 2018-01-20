@@ -7,6 +7,7 @@
 
 
 
+
 //HOME PAGE ANIMATION
 
 //when one of the boxes is clicked, disperse all the boxes
