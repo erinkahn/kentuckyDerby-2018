@@ -13,7 +13,7 @@
 
 body {
 	background: #fff;
-	width: 1920px;
+	width: 1290px;
 	height: 1080px;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -28,6 +28,7 @@ body {
 	width: 100px;
 	margin: 50px;
 	opacity: 50%;
+	display: none; /* erase this */  
 	
 	img{
 		z-index: 1;
@@ -48,52 +49,40 @@ body {
 
 // home page big icon buttons-----------------------------------
 
-.row{
+.home-boxes{
 	display: flex;
-	position: absolute;
 	flex-wrap: wrap;
-	margin-top: 450px;
-	margin-left: 320px;
+	width: 1260px;
+	height: 1020px;
+	margin: 50px auto;
 
 	.col{
-		padding: 45px;
+		margin: 0 auto;
 
 		img{
-			position: relative;
 			
-		}
-
-		p{
-			text-align: center;
-			font-size: 50px;
-			margin-top: -4px;
 		}
 	}
 
 }
 
 
-
-
-
-
 // bottom nav icons------------------------------------------
 
 nav{
-	width: 100%;
+	width: 90%;
 	position: fixed;
-	bottom: 70px;
+	bottom: 45px;
 	
 	ul{
 		display: flex;
-		justify-content: space-evenly; 
 
 		li{
 			font-size: 34px;
 			text-align: center;
 
 			figure{
-				padding-bottom: 20px;
+				padding: 10px 57px;
 			}
 
 			a{
@@ -115,99 +104,57 @@ nav{
 .timeline-heading,
 .fashion-heading{
 	text-align: center;
-	padding-left: 600px;
+	display: flex;
+	justify-content: center;
 
 	h1{
-		font-size: 80px;
-		margin-top: 300px;
-
-	}
-}
-
-// slick plugin fashion carousel-------------------------------
-
-section.hat.slider.slick-initialized.slick-slider{
-	width: 2500px;
-
-	div{
+		font-size: 70px;
 		margin-top: 90px;
-		padding: 0 10px 80px 10px;
-	}
 
-	button.slick-next.slick-arrow,
-	button.slick-prev.slick-arrow{
-		top: 520px;
 	}
 }
 
-
-// slick plugin facts carousel-------------------------------
-
-section.fact.slider.slick-initialized.slick-slider{
-	width: 2500px;
-
-	button.slick-next.slick-arrow,
-	button.slick-prev.slick-arrow{
-		top: 710px;
-	}
-
-	div{
-		margin-top: 90px;
-		padding: 0 0 0 365px;
-
-		img{
-			width: 1400px;
-			padding: 0 30px;
-		}
-
-		
-	}	
-
-}
 
 // slick plugin horses carousel-------------------------------
 
 
 section.center.slider.slick-initialized.slick-slider{
-	width: 2500px;
+	width: 90%;
+	margin: 80px auto;
+	display: flex;
 
 	div{
-		padding: 30px 30px;
+		justify-content: center;
 
 		img{
-			padding-bottom: 190px;
+			padding-bottom: 40px;
+			margin: 0 auto;
 		}
 	}
-}
-
-//margin and padding 
-div.slick-list.draggable{
-	padding: 0px -400px;
-	margin: 200px 480px;
 }
 
 .slick-slider{
 
 	//next button
 	button.slick-next.slick-arrow{
-		right: 130px;
-		top: 455px;
+		right: 90px;
+		top: 240px;
+		z-index: 2;
 
 		&::before{
-			font-size: 54px;
-			opacity: 100;
+			font-size: 50px;
 			color: gray;
 		}
 	}
 
 	//previous button
 	button.slick-prev.slick-arrow{
-		left: 130px;
-		top: 450px;
+		left: 50px;
+		top: 240px;
+		z-index: 2;
 
 		&::before{
-			font-size: 54px;
-			opacity: 100;
+			font-size: 50px;
 			color: gray;
 		}
 	}
@@ -378,5 +325,46 @@ div.slick-list.draggable{
 
 
 
-//-------------------------------------------------------
 
+
+
+// slick plugin fashion carousel-------------------------------
+
+section.hat.slider.slick-initialized.slick-slider{
+	width: 2500px;
+
+	div{
+		margin-top: 90px;
+		padding: 0 10px 80px 10px;
+	}
+
+	button.slick-next.slick-arrow,
+	button.slick-prev.slick-arrow{
+		top: 520px;
+	}
+}
+
+
+// slick plugin facts carousel-------------------------------
+
+section.fact.slider.slick-initialized.slick-slider{
+	width: 2500px;
+
+	button.slick-next.slick-arrow,
+	button.slick-prev.slick-arrow{
+		top: 710px;
+	}
+
+	div{
+		margin-top: 90px;
+		padding: 0 0 0 365px;
+
+		img{
+			width: 1400px;
+			padding: 0 30px;
+		}
+
+		
+	}	
+
+}
