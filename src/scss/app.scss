@@ -135,7 +135,7 @@ section.center.slider.slick-initialized.slick-slider{
 
 	//next button
 	button.slick-next.slick-arrow{
-		right: 90px;
+		right: 30px;
 		top: 240px;
 		z-index: 2;
 
@@ -147,7 +147,7 @@ section.center.slider.slick-initialized.slick-slider{
 
 	//previous button
 	button.slick-prev.slick-arrow{
-		left: 50px;
+		left: 10px;
 		top: 240px;
 		z-index: 2;
 
@@ -368,7 +368,7 @@ section.fact.slider.slick-initialized.slick-slider{
 	//next button
 	button.slick-next.slick-arrow{
 		right: 90px;
-		top: 240px;
+		top: 280px;
 		z-index: 2;
 
 		&::before{
@@ -380,7 +380,7 @@ section.fact.slider.slick-initialized.slick-slider{
 	//previous button
 	button.slick-prev.slick-arrow{
 		left: 50px;
-		top: 240px;
+		top: 280px;
 		z-index: 2;
 
 		&::before{
@@ -433,6 +433,202 @@ section.hat.slider.slick-initialized.slick-slider{
 		}
 	}
 }
+
+
+// garland of roses --------------------------------------
+
+.rose-content{
+	width: 88%;
+	margin: 30px auto;
+
+	.rose-text-column{
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+
+		p{
+			line-height: 1.3em;
+			font-size: 22px;
+			padding: 10px 0;
+		}
+	}
+
+	.h2-dates-and-ps{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin: 40px auto;
+
+		div{
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		
+			h2{
+				font-size: 33px;
+				font-weight: bold;
+				padding: 0 107px;
+			}
+
+			p{	
+				width: 280px;
+				padding: 10px 20px;
+				font-size: 22px;
+				line-height: 1.2em;
+			}
+		}
+
+
+	}
+
+}
+
+
+.falling-rose-container{
+	width: 90%;
+	height: 100vh;
+	bottom: 100px;
+	position: absolute;
+	overflow: hidden;
+
+	.rose1{
+		width: 10%;
+		position: absolute;
+		top: 80%;
+		left: -30px;
+	}
+
+	.rose2{
+		width: 10%;
+		position: absolute;
+		top: 92%;
+		left: 8%;
+	}
+
+	.rose3{
+		width: 10%;
+		position: absolute;
+		top: 71%;
+		left: 19%;
+	}
+
+	.rose4{
+		width: 10%;
+		position: absolute;
+		top: 83%;
+		left: 30%;
+	}
+
+	.rose5{
+		width: 10%;
+		position: absolute;
+		top: 70%;
+		left: 32%;
+	}
+
+	.rose7{
+		width: 11%;
+		position: absolute;
+		top: 76%;
+		left: 54%;
+	}
+
+	.rose8{
+		width: 10%;
+		position: absolute;
+		top: 76%;
+		left: 66%;
+	}
+
+	.rose9{
+		width: 10%;
+		position: absolute;
+		top: 92%;
+		left: 78%;
+	}
+
+	.rose10{
+		width: 10%;
+		position: absolute;
+		top: 73%;
+		left: 84%;
+	}
+
+	.rose11{
+		width: 14%;
+		position: absolute;
+		top: 80%;
+		left: 88%;
+	}
+
+	.rose12{
+		width: 14%;
+		position: absolute;
+		top: 90%;
+		left: 0%;
+	}
+
+	.rose13{
+		width: 14%;
+		position: absolute;
+		top: 76%;
+		left: 8%;
+	}
+
+	.rose15{
+		width: 14%;
+		position: absolute;
+		top: 89%;
+		left: 20%;
+	}
+
+	.rose16{
+		width: 13%;
+		position: absolute;
+		top: 75%;
+		left: 40%;
+	}
+
+	.rose17{
+		width: 14%;
+		position: absolute;
+		top: 88%;
+		left: 44%;
+	}
+
+	.rose18{
+		width: 14%;
+		position: absolute;
+		top: 80%;
+		left: 75%;
+	}
+
+	.rose19{
+		width: 14%;
+		position: absolute;
+		top: 72%;
+		left: 26%;
+	}
+
+	.rose20{
+		width: 14%;
+		position: absolute;
+		top: 88%;
+		left: 60%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
