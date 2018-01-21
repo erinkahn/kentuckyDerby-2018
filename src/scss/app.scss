@@ -103,7 +103,9 @@ nav{
 .horses-heading,
 .timeline-heading,
 .fashion-heading,
-.facts-heading{
+.facts-heading,
+.rose-heading,
+.mint-heading{
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -485,7 +487,7 @@ section.hat.slider.slick-initialized.slick-slider{
 
 }
 
-
+//animation rose container
 .falling-rose-container{
 	width: 90%;
 	height: 100vh;
@@ -622,8 +624,35 @@ section.hat.slider.slick-initialized.slick-slider{
 
 
 
+// mint julep page --------------------------------------
 
+.mint-content{
+	width: 77%;
+	margin: 80px auto;
+	display: flex;
+	justify-content: center;
 
+	div{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.mint-cup-animation{
+		padding-right: 40px;
+	}
+
+	.mint-text-and-recipe{
+		display: flex;
+		flex-direction: column;
+
+		p{
+			font-size: 23px;
+			line-height: 1.4em;
+			padding-bottom: 20px;
+		}
+
+	}
+}
 
 
 
