@@ -1,8 +1,26 @@
 
 @import 'reset';
 
- // @import url("https://use.typekit.net/bct2pih.css");
+@font-face {
+	font-family: 'BickhamScriptPro3';
+	src: url(../../dist/fonts/BickhamScriptPro-Regular.otf) format('opentype'),
+		 url(../../dist/fonts/BickhamScriptPro-Regular.otf) format('openType'),
+		 url(../../dist/fonts/BickhamScriptPro-Regular.otf) format('otf'); 
+}
 
+@font-face{
+	font-family: 'MrsEavesOTRoman';
+	src: url(../../dist/fonts/MrsEavesOTRoman.otf) format('opentype'),
+		 url(../../dist/fonts/MrsEavesOTRoman.otf) format('openType'),
+		 url(../../dist/fonts/MrsEavesOTRoman.otf) format('otf'); 
+}
+
+@font-face{
+	font-family: 'MrsEavesPetiteCaps';
+	src: url(../../dist/fonts/MrsEavesPetiteCaps_PetiteCaps.ttf) format('truetype'),
+		 url(../../dist/fonts/MrsEavesPetiteCaps_PetiteCaps.ttf) format('trueType'),
+		 url(../../dist/fonts/MrsEavesPetiteCaps_PetiteCaps.ttf) format('ttf'); 
+}
 
 
 // 1920 w by 1080 h tv
@@ -78,7 +96,7 @@ body {
 			}
 
 			p{
-				font-family: mrs-eaves-roman-petite-caps, sans-serif;
+				font-family: 'MrsEavesPetiteCaps', Fallback, sans-serif;
 				font-style: normal;
 				font-weight: 400;
 				text-transform: uppercase;
@@ -145,12 +163,23 @@ nav{
 	text-align: center;
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 
 	h1{
-		font-size: 70px;
-		margin-top: 90px;
+		font-family: 'BickhamScriptPro3', Fallback, sans-serif;
+		font-size: 130px;
+		margin-top: 70px;
 		color: #f4d680;
+	}
 
+	div{
+		display: flex;
+
+		img{
+			height: 87px;
+			padding: 0 48px;
+			margin-top: 80px;
+		}
 	}
 }
 
