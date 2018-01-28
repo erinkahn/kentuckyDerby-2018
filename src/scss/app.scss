@@ -314,18 +314,24 @@ section.dates.slider.slick-initialized.slick-slider{
 }
 
 section.hat.slider.slick-initialized.slick-slider{
-	width: 92%;
-	margin: 80px auto;
+	margin: 75px 40px;
 	display: flex;
 	justify-content: center;
 
+
 	div{
-		width: 88%;
-		justify-content: center;
+		text-align: center;
 
 		img{
-			margin: 95px auto;
-			padding: 0 10px;
+			overflow: hidden;
+			margin: 90px auto;
+		}
+
+		p{
+			color: #a1b6f0;
+			font-size: 50px;
+			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
+			margin-top: -70px;
 		}
 	}
 
@@ -507,7 +513,7 @@ section.fact.slider.slick-initialized.slick-slider{
 }
 
 .mint-content{
-	width: 86%;
+	width: 84.7%;
 	margin: 50px auto;
 	display: flex;
 	justify-content: center;
@@ -524,18 +530,19 @@ section.fact.slider.slick-initialized.slick-slider{
 
 		p{	
 			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
-			font-size: 33px;
+			font-size: 31px;
 			line-height: 1.6em;
 			padding-bottom: 20px;
 			color: #fff;
 			letter-spacing: 0.08em;
+			text-align: justify;
 		}
 
 		a{
-			margin-top: 31px;
+			margin-top: 32px;
 			width: 450px;
 			padding: 16px 50px;
-			margin-left: 200px;
+			margin-left: 270px;
 			color: #f4d680;
 			text-transform: uppercase;
 			letter-spacing: 0.04em;
