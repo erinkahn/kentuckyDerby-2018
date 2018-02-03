@@ -29,6 +29,13 @@
 		 url(../../dist/fonts/MrsEavesPetiteCaps_PetiteCaps.ttf) format('ttf'); 
 }
 
+@font-face{
+	font-family: 'MrsEavesSmallCapsRegular';
+	src: url(../../dist/fonts/MrsEavesSmallCapsRegular.ttf) format('truetype'),
+		 url(../../dist/fonts/MrsEavesSmallCapsRegular.ttf) format('trueType'),
+		 url(../../dist/fonts/MrsEavesSmallCapsRegular.ttf) format('ttf');
+}
+
 
 // 1920 w by 1080 h tv
 // not responsive 
@@ -194,9 +201,8 @@ nav{
 // slick plugin horses carousel-------------------------------
 
 .horses-bkg{
-	// background-image: url(../../dist/img/fact-bkg.jpg);
-	// background-repeat: no-repeat;
-	background-color: #294596;
+	background-image: url(../../dist/img/horse-bkg.jpg);
+	background-repeat: no-repeat;
 }
 
 
@@ -204,25 +210,29 @@ section.center.slider.slick-initialized.slick-slider{
 	width: 90%;
 	margin: 80px auto;
 	display: flex;
+	justify-content: center;
 
 	div{
-		justify-content: center;
+		// justify-content: center;
 
 		img{
-			padding-bottom: 40px;
-			margin: 0 auto;
+			margin: 120px auto;
+			width: 360px;
 		}
 	}
 
 	//next button
 	button.slick-next.slick-arrow{
-		right: 30px;
+		right: 66px;
 		top: 240px;
 		z-index: 2;
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/rightarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 110% auto;
 		}
 	}
 
@@ -234,7 +244,10 @@ section.center.slider.slick-initialized.slick-slider{
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/leftarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 110% auto;
 		}
 	}
 }
@@ -254,7 +267,7 @@ section.center.slider.slick-initialized.slick-slider{
 
 section.dates.slider.slick-initialized.slick-slider{
 	width: 110%;
-	margin: 80px auto;
+	margin: 50px auto;
 
 	div{
 		justify-content: center;
@@ -262,9 +275,10 @@ section.dates.slider.slick-initialized.slick-slider{
 		flex-direction: row;
 
 		a{
-			font-size: 33px;
-			color: #fff;
+			font-size: 99px;
+			color: #a1b6f0;
 			padding: 0 30px;
+			font-family: 'BickhamScriptPro3', Fallback, sans-serif;
 		}			
 	}
 
@@ -272,7 +286,7 @@ section.dates.slider.slick-initialized.slick-slider{
 
 
 #content{
-	margin: auto 480px;
+	margin: auto 399px;
 	padding: 45px 0;
 	display: flex;
 	overflow: hidden;
@@ -283,24 +297,36 @@ section.dates.slider.slick-initialized.slick-slider{
 		img{
 			float: left;
 			margin: 20px;
-
 		}
 
-		h1{
+		h3{
+			white-space: nowrap;
 			margin-top: 20px;
-			font-size: 39px;
-			font-weight: bold;
-			color: #fff;
-			letter-spacing: 0.07em;
+			font-size: 24px;
+			color: #f4d680;
+			letter-spacing: 0.1em;
+			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
+			text-transform: uppercase;
+		}
+
+		h4{
+			white-space: nowrap;
+			margin-top: 10px;
+			font-size: 55px;
+			color: #f4d680;
+			letter-spacing: 0.05em;
+			font-family: 'MrsEavesSmallCapsRegular', Fallback, sans-serif;
 		}
 
 		p{
-			width: 980px;
-			padding: 20px 30px 200px 30px;
+			width: 987px;
+			white-space: nowrap;
+			padding: 20px 30px 0 35px;
 			line-height: 29px;
 			font-size: 28px;
 			letter-spacing: 0.08em;
 			color: #fff;
+			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
 		}
 	}
 }
@@ -337,13 +363,16 @@ section.hat.slider.slick-initialized.slick-slider{
 
 	//next button
 	button.slick-next.slick-arrow{
-		right: 25px;
+		right: 49px;
 		top: 240px;
 		z-index: 2;
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/rightarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 108% auto;
 		}
 	}
 
@@ -355,7 +384,10 @@ section.hat.slider.slick-initialized.slick-slider{
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/leftarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 108% auto;
 		}
 	}
 }
@@ -365,9 +397,8 @@ section.hat.slider.slick-initialized.slick-slider{
 // slick plugin facts carousel-------------------------------
 
 .facts-bkg{
-	// background-image: url(../../dist/img/fact-bkg.jpg);
-	// background-repeat: no-repeat;
-	background-color: #294596;
+	background-image: url(../../dist/img/fact-bkg.jpg);
+	background-repeat: no-repeat;
 }
 
 
@@ -392,7 +423,10 @@ section.fact.slider.slick-initialized.slick-slider{
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/rightarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 108% auto;
 		}
 	}
 
@@ -404,7 +438,10 @@ section.fact.slider.slick-initialized.slick-slider{
 
 		&::before{
 			font-size: 50px;
-			color: gray;
+			background-image: url(../../dist/img/leftarrow.png);
+			background-repeat: no-repeat;
+			color: transparent;
+			background-size: 108% auto;
 		}
 	}
 }
