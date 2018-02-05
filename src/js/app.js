@@ -14,6 +14,18 @@ rosetl.staggerFrom(".rose3", 3, {top: -2000, left: 83, right: 3, opacity: 0, yoy
 
 
 
+// RECIPE POP UP 
+
+function div_show(){
+	document.querySelector(".recipePopup").style.display = "block";
+	document.querySelector("#closeRecipe").style.display = "block";
+}
+
+function div_hide(){
+	document.querySelector("#closeRecipe").style.display = "none";
+	document.querySelector(".recipePopup").style.display = "none";
+}
+
 
 //HOME PAGE ANIMATION
 

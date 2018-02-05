@@ -266,7 +266,7 @@ section.center.slider.slick-initialized.slick-slider{
 
 
 section.dates.slider.slick-initialized.slick-slider{
-	width: 110%;
+	width: 120%;
 	margin: 50px auto;
 
 	div{
@@ -575,7 +575,7 @@ section.fact.slider.slick-initialized.slick-slider{
 			text-align: justify;
 		}
 
-		a{
+		#getRecipe{
 			margin-top: 32px;
 			width: 450px;
 			padding: 16px 50px;
@@ -594,7 +594,75 @@ section.fact.slider.slick-initialized.slick-slider{
 
 
 
+// recipe popup ----------------------------------------
 
+.recipePopup{
+	background-image: url(../../dist/img/paper.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 30px 100px;
+	width: 100vw;
+	height: 100vh;
+	margin-top: -240px;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.4);
+
+	#closeRecipe{
+		width: 50px;
+		height: 50px;
+		left: 180px;
+		top: 190px;
+		position: absolute;
+	}
+
+	h1{
+		display: flex;
+		justify-content: center;
+		font-size: 90px;
+		color: #081b50;
+		font-family: 'MrsEavesPetiteCaps', Fallback, sans-serif;
+		margin-top: 170px;
+	}
+
+	.recipeContainer{
+		display: flex;
+		flex-direction: row;
+
+		div{
+			display: flex;
+			flex-direction: column;
+			margin-left: 270px;
+			margin-top: 50px;
+
+			h2{
+				font-size: 75px;
+				letter-spacing: 0.04em;
+				color: #b50e20;
+				font-family: 'MrsEavesPetiteCaps', Fallback, sans-serif;
+			}
+
+			
+			li{
+				font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
+				font-size: 33px;
+				margin-top: 18px;
+				white-space: nowrap;
+			}
+
+			p{
+				font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
+				font-size: 31px;
+				margin-top:20px;
+				width: 559px;
+				line-height: 1.3em;
+			}
+			
+		}
+	}
+
+
+}
 
 
 

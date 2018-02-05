@@ -1,7 +1,7 @@
 "use strict";
 
 (function () {
-		console.log("Hello World from app.js, transpiled and concatenated!");
+	console.log("Hello World from app.js, transpiled and concatenated!");
 })();
 
 // ROSE PAGE ANIMATION 
@@ -11,6 +11,18 @@ var rosetl = new TimelineMax();
 rosetl.staggerFrom(".rose1", 3, { top: -2000, left: 300, opacity: 0, yoyo: false, delay: 0 });
 rosetl.staggerFrom(".rose2", 3, { top: -2000, opacity: 0, yoyo: false, delay: 0 });
 rosetl.staggerFrom(".rose3", 3, { top: -2000, left: 83, right: 3, opacity: 0, yoyo: false, delay: 0 });
+
+// RECIPE POP UP 
+
+function div_show() {
+	document.querySelector(".recipePopup").style.display = "block";
+	document.querySelector("#closeRecipe").style.display = "block";
+}
+
+function div_hide() {
+	document.querySelector("#closeRecipe").style.display = "none";
+	document.querySelector(".recipePopup").style.display = "none";
+}
 
 //HOME PAGE ANIMATION
 
