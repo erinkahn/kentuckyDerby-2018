@@ -576,9 +576,10 @@ section.fact.slider.slick-initialized.slick-slider{
 		}
 
 		#getRecipe{
-			margin-top: 32px;
+			margin-top: 34px;
+			line-height: 1.1em;
 			width: 450px;
-			padding: 16px 50px;
+			padding: 17px 50px;
 			margin-left: 270px;
 			color: #f4d680;
 			text-transform: uppercase;
@@ -586,7 +587,8 @@ section.fact.slider.slick-initialized.slick-slider{
 			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
 			font-size: 40px;
 			background-color: #081b50;
-			border-radius: 30px;
+			border-radius: 39px;
+			border: 0px;
 		}
 
 	}
@@ -597,6 +599,7 @@ section.fact.slider.slick-initialized.slick-slider{
 // recipe popup ----------------------------------------
 
 .recipePopup{
+	display: none;
 	background-image: url(../../dist/img/paper.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -628,12 +631,13 @@ section.fact.slider.slick-initialized.slick-slider{
 	.recipeContainer{
 		display: flex;
 		flex-direction: row;
+		position: relative;
 
 		div{
 			display: flex;
 			flex-direction: column;
 			margin-left: 270px;
-			margin-top: 50px;
+			margin-top: 40px;
 
 			h2{
 				font-size: 75px;
@@ -654,11 +658,28 @@ section.fact.slider.slick-initialized.slick-slider{
 				font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
 				font-size: 31px;
 				margin-top:20px;
-				width: 559px;
+				width: 609px;
 				line-height: 1.3em;
 			}
 			
 		}
+
+	}
+
+	.emailButton{
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		width: 450px;
+		padding: 16px 50px;
+		margin-left: 738px;
+		color: #f4d680;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
+		font-size: 40px;
+		background-color: #081b50;
+		border-radius: 30px;
 	}
 
 
