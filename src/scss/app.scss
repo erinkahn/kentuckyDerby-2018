@@ -150,17 +150,30 @@ nav{
 						width: 53%;
 					}
 				}
-			}
 
-
-			a{
-				color: gray;
-
-				&:active {
-					color: #e0586f;
+				//don't show active button unless active
+				div{
+					img{
+						display: none;
+						width: 53%;
+					}
 				}
 			}
+
 		}
+	}
+
+}
+
+// if the li is active/on the page, show the active button
+// and hide the nonactive button
+nav li.active {
+	figure img{
+		display: none;
+	}
+
+	div img{
+		display: flex;
 	}
 
 }
@@ -346,19 +359,26 @@ section.hat.slider.slick-initialized.slick-slider{
 
 
 	div{
+		transition-duration: 0.5s;
 		text-align: center;
 
 		img{
 			overflow: hidden;
-			margin: 90px auto;
+			margin: 50px auto;
 		}
 
 		p{
 			color: #a1b6f0;
 			font-size: 50px;
 			font-family: 'MrsEavesOTRoman', Fallback, sans-serif;
-			margin-top: -70px;
+			margin-top: -30px;
 		}
+	}
+
+	//make the middle picture bigger
+	.slick-current.slick-active.slick-center{
+		transform: scale(1.2);
+		padding-bottom: 39px;
 	}
 
 	//next button
@@ -415,6 +435,7 @@ section.fact.slider.slick-initialized.slick-slider{
 		}
 	}
 
+
 	//next button
 	button.slick-next.slick-arrow{
 		right: 90px;
@@ -445,6 +466,10 @@ section.fact.slider.slick-initialized.slick-slider{
 		}
 	}
 }
+
+
+
+
 
 
 
@@ -603,13 +628,13 @@ section.fact.slider.slick-initialized.slick-slider{
 	background-image: url(../../dist/img/paper.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: 30px 100px;
+	background-position: 30px 112px;
 	width: 100vw;
 	height: 100vh;
-	margin-top: -240px;
+	margin-top: -247px;
 	position: absolute;
 	z-index: 2;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.6);
 
 	#closeRecipe{
 		width: 50px;
