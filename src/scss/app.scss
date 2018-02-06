@@ -219,51 +219,21 @@ nav li.active {
 }
 
 
-section.center.slider.slick-initialized.slick-slider{
-	width: 90%;
-	margin: 80px auto;
+.horse-images{
 	display: flex;
 	justify-content: center;
-
-	div{
-		// justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px 80px;
+	
+	div {
 
 		img{
-			margin: 120px auto;
-			width: 360px;
-		}
-	}
-
-	//next button
-	button.slick-next.slick-arrow{
-		right: 66px;
-		top: 240px;
-		z-index: 2;
-
-		&::before{
-			font-size: 50px;
-			background-image: url(../../dist/img/rightarrow.png);
-			background-repeat: no-repeat;
-			color: transparent;
-			background-size: 110% auto;
-		}
-	}
-
-	//previous button
-	button.slick-prev.slick-arrow{
-		left: 10px;
-		top: 240px;
-		z-index: 2;
-
-		&::before{
-			font-size: 50px;
-			background-image: url(../../dist/img/leftarrow.png);
-			background-repeat: no-repeat;
-			color: transparent;
-			background-size: 110% auto;
+			padding: 10px;
 		}
 	}
 }
+
+
 
 
 	
