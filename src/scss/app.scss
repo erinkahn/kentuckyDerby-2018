@@ -269,17 +269,17 @@ section.dates.slider.slick-initialized.slick-slider{
 
 
 #content{
-	margin: auto 399px;
+	margin: 0 auto;
 	padding: 45px 0;
 	display: flex;
 	overflow: hidden;
 
 	li{
-		padding: 0 40px;
+		padding: 0 430px;
 
 		img{
 			float: left;
-			margin: 20px;
+			margin: 23px;
 		}
 
 		h3{
@@ -384,7 +384,7 @@ section.hat.slider.slick-initialized.slick-slider{
 
 
 
-// slick plugin facts carousel-------------------------------
+// facts page-------------------------------
 
 .facts-bkg{
 	background-image: url(../../dist/img/fact-bkg.jpg);
@@ -392,49 +392,11 @@ section.hat.slider.slick-initialized.slick-slider{
 }
 
 
-section.fact.slider.slick-initialized.slick-slider{
-	width: 95%;
-	margin: 80px auto;
+.facts-container{
 	display: flex;
+	justify-content: center;
+	margin-top: 30px;
 
-	div{
-		justify-content: center;
-
-		img{
-			margin: 80px 520px;
-		}
-	}
-
-
-	//next button
-	button.slick-next.slick-arrow{
-		right: 90px;
-		top: 280px;
-		z-index: 2;
-
-		&::before{
-			font-size: 50px;
-			background-image: url(../../dist/img/rightarrow.png);
-			background-repeat: no-repeat;
-			color: transparent;
-			background-size: 108% auto;
-		}
-	}
-
-	//previous button
-	button.slick-prev.slick-arrow{
-		left: 50px;
-		top: 280px;
-		z-index: 2;
-
-		&::before{
-			font-size: 50px;
-			background-image: url(../../dist/img/leftarrow.png);
-			background-repeat: no-repeat;
-			color: transparent;
-			background-size: 108% auto;
-		}
-	}
 }
 
 
