@@ -4,7 +4,7 @@
 })();
 
 
-// ROSE PAGE ANIMATION 
+// ROSE PAGE ANIMATION---------------------------------------------------
 
 var rosetl = new TimelineMax();
 
@@ -14,7 +14,8 @@ rosetl.staggerFrom(".rose3", 3, {top: -2000, left: 83, right: 3, opacity: 0, yoy
 
 
 
-// RECIPE POP UP 
+
+// RECIPE POP UP --------------------------------------------------------
 
 function div_show(){
 	document.querySelector(".recipePopup").style.display = "block";
@@ -27,7 +28,69 @@ function div_hide(){
 }
 
 
-//HOME PAGE ANIMATION
+
+
+
+
+// ATTRACT LOOP VIDEO---------------------------------------------------
+
+//click event on the body/window to hide video
+window.addEventListener("click", function(){
+
+	//reset timer
+	var screenTimer;
+	resetTimer();
+
+	//get the derby video 
+	var derbyVideo = document.querySelector(".bigVideo");
+
+	//hide it when you click the page
+	derbyVideo.style.display = "none";
+
+});
+
+
+
+window.onload = function() {
+
+	screenTimer = setTimeout(inactive, 10 * 1000);
+
+};
+
+
+function inactive() {
+
+	var derbyVideo = document.querySelector(".bigVideo");
+	derbyVideo.style.display = "block";
+}
+
+
+function resetTimer(){
+
+	var derbyVideo = document.querySelector(".bigVideo");
+
+	console.log("reset the timer");
+
+	derbyVideo.style.display = "none";
+
+	clearTimeout(derbyVideo);
+
+	screenTimer = setTimeout(inactive, 10 * 1000);
+}
+
+
+
+// right now its only showing the video on the home page
+// but i want it to take you back to the home page after
+// inactivity, so I shouldn't have to put the video on
+// every page. 
+
+
+
+
+
+
+//HOME PAGE ANIMATION-------------------------------------------------------
 
 //when one of the boxes is clicked, disperse all the boxes
 
