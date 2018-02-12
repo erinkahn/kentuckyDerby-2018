@@ -27,48 +27,43 @@ function div_hide() {
 // ATTRACT LOOP VIDEO---------------------------------------------------
 
 //click event on the body/window to hide video
-window.addEventListener("click", function () {
+window.addEventListener("click", resetTimer);
+var screenTimer = setTimeout(inactive, 10 * 1000);
 
-	//reset timer
-	var screenTimer;
-	resetTimer();
-
-	//get the derby video 
-	var derbyVideo = document.querySelector(".bigVideo");
-
-	//hide it when you click the page
-	derbyVideo.style.display = "none";
-});
-
-window.onload = function () {
-
-	screenTimer = setTimeout(inactive, 10 * 1000);
-};
-
+//once you reset the timer show video and go back to homepage
 function inactive() {
 
 	var derbyVideo = document.querySelector(".bigVideo");
-	derbyVideo.style.display = "block";
+	var enterButton = document.querySelector(".enterHere");
+
+	if (derbyVideo) {
+		// show video
+		enterButton.style.display = "block";
+		derbyVideo.style.display = "block";
+	} else {
+		// go to homepage
+		window.location.href = "index.html";
+	}
 }
 
+//reset timer
 function resetTimer() {
 
 	var derbyVideo = document.querySelector(".bigVideo");
+	var enterButton = document.querySelector(".enterHere");
 
 	console.log("reset the timer");
 
-	derbyVideo.style.display = "none";
+	//if the derby video is showing then set its display to none
+	if (derbyVideo) {
+		derbyVideo.style.display = "none";
+		enterButton.style.display = "none";
+	}
 
-	clearTimeout(derbyVideo);
+	clearTimeout(screenTimer);
 
 	screenTimer = setTimeout(inactive, 10 * 1000);
 }
-
-// right now its only showing the video on the home page
-// but i want it to take you back to the home page after
-// inactivity, so I shouldn't have to put the video on
-// every page. 
-
 
 //HOME PAGE ANIMATION-------------------------------------------------------
 
