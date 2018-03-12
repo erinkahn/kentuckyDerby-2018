@@ -65,16 +65,14 @@ body {
 		bottom: 80px;
 		left: 42%;
 		z-index: 2;
-		// display: none; /* erase this */  
 	}
 }
 
 .bigVideo {
 	position: relative;
-	width: 100wh;
+	width: 100vw;
 	height: 100vh;
 	z-index: 0;
-	// display: none; /* erase this */  
 }
 
 
@@ -146,6 +144,7 @@ nav{
 					img{
 						width: 53%;
 					}
+
 				}
 
 				//don't show active button unless active

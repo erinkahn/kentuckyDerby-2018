@@ -27,44 +27,41 @@ function div_hide() {
 // ATTRACT LOOP VIDEO---------------------------------------------------
 
 //click event on the body/window to hide video
-// window.addEventListener("click", resetTimer);
-// var screenTimer = setTimeout(inactive, 10 * 1000);
-
+window.addEventListener("click", resetTimer);
+var screenTimer = setTimeout(inactive, 20 * 1000);
 
 // //once you reset the timer show video and go back to homepage
-// function inactive() {
+function inactive() {
 
+	var derbyVideo = document.querySelector(".bigVideo");
+	var enterButton = document.querySelector(".enterHere");
 
-// 	var derbyVideo = document.querySelector(".bigVideo");
-// 	var enterButton = document.querySelector(".enterHere");
+	if (derbyVideo) {
+		// show video
+		enterButton.style.display = "block";
+		derbyVideo.style.display = "block";
+	} else {
+		// go to homepage
+		window.location.href = "index.html";
+	}
+}
 
-// 	if (derbyVideo) {
-// 		// show video
-// 		enterButton.style.display = "block";
-// 		derbyVideo.style.display = "block";
+//reset timer
+function resetTimer() {
 
-// 	} else {
-// 		 // go to homepage
-// 		window.location.href = "index.html";
-// 	}
-// }
+	var derbyVideo = document.querySelector(".bigVideo");
+	var enterButton = document.querySelector(".enterHere");
 
-// //reset timer
-// function resetTimer(){
+	console.log("reset the timer");
 
-// 	var derbyVideo = document.querySelector(".bigVideo");
-// 	var enterButton = document.querySelector(".enterHere");
+	//if the derby video is showing then set its display to none
+	if (derbyVideo) {
+		derbyVideo.style.display = "none";
+		enterButton.style.display = "none";
+	}
 
-// 	console.log("reset the timer");
+	clearTimeout(screenTimer);
 
-// 	//if the derby video is showing then set its display to none
-// 	if (derbyVideo) {
-// 		derbyVideo.style.display = "none";
-// 		enterButton.style.display = "none";
-// 	}
-
-// 	clearTimeout(screenTimer);
-
-// 	screenTimer = setTimeout(inactive, 60 * 1000);
-// }
+	screenTimer = setTimeout(inactive, 60 * 1000);
+}
 //# sourceMappingURL=app.js.map
