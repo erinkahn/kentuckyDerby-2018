@@ -245,9 +245,11 @@ nav li.active {
 }
 
 
-section.dates.slider.slick-initialized.slick-slider{
-	width: 120%;
+section.dates{
+	width: 100vw;
 	margin: 50px auto;
+	display: flex;
+	flex-direction: center;
 
 	div{
 		justify-content: center;
@@ -257,7 +259,7 @@ section.dates.slider.slick-initialized.slick-slider{
 		a{
 			font-size: 99px;
 			color: #a1b6f0;
-			padding: 0 30px;
+			padding: 0 32px;
 			font-family: 'BickhamScriptPro3', Fallback, sans-serif;
 		}			
 	}

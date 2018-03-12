@@ -35,87 +35,48 @@ function div_hide(){
 // ATTRACT LOOP VIDEO---------------------------------------------------
 
 //click event on the body/window to hide video
-window.addEventListener("click", resetTimer);
-var screenTimer = setTimeout(inactive, 10 * 1000);
+// window.addEventListener("click", resetTimer);
+// var screenTimer = setTimeout(inactive, 10 * 1000);
 
 
-//once you reset the timer show video and go back to homepage
-function inactive() {
+// //once you reset the timer show video and go back to homepage
+// function inactive() {
 
 
-	var derbyVideo = document.querySelector(".bigVideo");
-	var enterButton = document.querySelector(".enterHere");
+// 	var derbyVideo = document.querySelector(".bigVideo");
+// 	var enterButton = document.querySelector(".enterHere");
 
-	if (derbyVideo) {
-		// show video
-		enterButton.style.display = "block";
-		derbyVideo.style.display = "block";
+// 	if (derbyVideo) {
+// 		// show video
+// 		enterButton.style.display = "block";
+// 		derbyVideo.style.display = "block";
 
-	} else {
-		 // go to homepage
-		window.location.href = "index.html";
-	}
-}
+// 	} else {
+// 		 // go to homepage
+// 		window.location.href = "index.html";
+// 	}
+// }
 
-//reset timer
-function resetTimer(){
+// //reset timer
+// function resetTimer(){
 
-	var derbyVideo = document.querySelector(".bigVideo");
-	var enterButton = document.querySelector(".enterHere");
+// 	var derbyVideo = document.querySelector(".bigVideo");
+// 	var enterButton = document.querySelector(".enterHere");
 
-	console.log("reset the timer");
+// 	console.log("reset the timer");
 
-	//if the derby video is showing then set its display to none
-	if (derbyVideo) {
-		derbyVideo.style.display = "none";
-		enterButton.style.display = "none";
-	}
+// 	//if the derby video is showing then set its display to none
+// 	if (derbyVideo) {
+// 		derbyVideo.style.display = "none";
+// 		enterButton.style.display = "none";
+// 	}
 
-	clearTimeout(screenTimer);
+// 	clearTimeout(screenTimer);
 
-	screenTimer = setTimeout(inactive, 10 * 1000);
-}
-
-
-
-
-
-//HOME PAGE ANIMATION-------------------------------------------------------
-
-//when one of the boxes is clicked, disperse all the boxes
-
-// var allPages = document.querySelector('.row .col');
-// var horses = document.querySelector('.horses .col');
-// var timeline = document.querySelector('.timeline .col');
-// var facts = document.querySelector('.facts .col');
-// var fashion = document.querySelector('.fashion .col');
-// var rose = document.querySelector('.rose .col');
-// var mint = document.querySelector('.mint .col');
-
-// horses.onload = function() {
-
-// 	var tl = new TimelineMax();
-
-// 	tl.to(horses, 0.1, {top: 330});
+// 	screenTimer = setTimeout(inactive, 60 * 1000);
 // }
 
 
-// for (var i = 0; i < allPages.length; i++) {
-// 	allPages[i].addEventListener('click', function(){
-		//disperse the boxes in diff directions
-		//create new class in css
-		//use tweenmax to move the boxes
-// 		horses.onload = function(){
-// 			setTimeout(function(e){
-// 				if (horses==clicked) {
-// 					e.preventDefault();
-// 					doAnimation();
-// 					linkToNewPage();
-// 				}
-// 			}, 100);
-// 		}
-// 	})
-// }
 
 
 
